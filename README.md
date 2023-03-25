@@ -9,7 +9,7 @@ Namun untuk melakukan login, user harus melakukan registrasi akun pengguna terle
 ## Register Page
 Berikut ini merupakan tampilan dari halaman register yang berisi form untuk user menginputkan data akun yang akan dibuat.
 ![2 register page](https://user-images.githubusercontent.com/120239011/227744789-d5fbd52f-5510-47c7-8cc6-0161b4d96c6a.png)
-Data yang telah dimasukan oleh user pada ini akan disimpan pada local storage website ini.
+Data yang telah dimasukan oleh user pada form ini akan disimpan pada local storage website ini.
 ![3 succes register](https://user-images.githubusercontent.com/120239011/227744837-6217404e-d5ea-44c1-b868-4f8f9dfe2d1e.png)
 
 ## Local Storage
