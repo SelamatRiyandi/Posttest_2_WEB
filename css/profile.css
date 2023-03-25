@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+span  {
+    margin-top: 20px;
+    color: #ffd000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("img/bgdark.jpg");
+    background-size: cover;
+}
+
+.container {
+    position: fixed;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(33, 33, 33, 0.7);
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 350px;
+    border-radius: 8px;
+    background-color: #ffd000;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    color: #ffffff;
+}
+
+.container form .detailpersonal {
+    margin-top: 30px;
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #fff;
+}
+
+/* .container form .fields {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
+
+.container form .fields .inputfields {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 10px 0;
+}
+.inputfields label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    font-family: sans-serif;
+}
+.inputfields input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4e4e4e;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.container form .fields .inputany {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: row;
+    margin: 10px 0;
+}
+.inputany label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    font-family: sans-serif;
+}
+.inputany input {
+    margin-left: 50px;
+    margin-right: 5px;
+    outline: none;
+    height: 18px;
+    width: 20px;
+}
+.inputany select {
+    color: #4e4e4e;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    /* width: px; */
+    margin-left: 27px;
+}
+.inputany textarea {
+    color: #4e4e4e;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.inputfields input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+.inputfields input[type="date"]{
+    color: #626262;
+} 
+
+.inputfields input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    max-width: 150px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 25px 0;
+    background-color: #8a7208;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #646361;
+    color: #ffd000;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- <h1>Selamat Datang</h1> -->
+    <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png">
+            <h2>Rational Geographic</h2>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Dashboard" class="activated">Dashboard</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="information">
+        <div class="overlay"></div>
+        <img src="img/logo.png" class="mobile">
+        <div id="circle">
+            <div class="feature one">
+                <ion-icon name="paw"></ion-icon>
+                <div>
+                    <h1>Animals</h1>
+                    <!-- <h4>Selamat Datang <span id="nm"></h4> -->
+                    <p>Get to know animals from around the world</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <ion-icon name="leaf"></ion-icon>
+                <div>
+                    <h1>Plants</h1>
+                    <p>explore various plant species in the world</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <ion-icon name="partly-sunny"></ion-icon>
+                <div>
+                    <h1>Climates</h1>
+                    <p>Study the various climates that exist in all parts of the world</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <ion-icon name="earth"></ion-icon>
+                <div>
+                    <h1>Geographical</h1>
+                    <p>Explore geographical areas and ecosystems that exist on earth</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <ion-icon name="chevron-up" id="upBtn"></ion-icon>
+        <h3>Menu</h3>
+        <ion-icon name="chevron-down" id="downBtn"></ion-icon>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="dashboard.js"></script>
+</html>

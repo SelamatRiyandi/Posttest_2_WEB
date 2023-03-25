@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Details Profile of <div class="user"><span id="username"></span></div></span></header>
+        <form action="#" id="profform">
+            <div class="form1">
+                <div class="detailpersonal">
+                    <span class="title">User Profile</span>
+                    <div class="fields">
+
+                        <div class="inputfields">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" placeholder="Nama Lengkap Anda" required>
+                        </div>
+                        <div class="inputfields">
+                            <label for="ttl">Tanggal Lahir</label>
+                            <input type="date" id="ttl" placeholder="Tanggal Lahir Anda" required>
+                        </div>
+                        <div class="inputfields">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" placeholder="Alamat Email Anda" required>
+                        </div>
+
+
+                        <div class="inputany">
+                            <label for="alamat">Alamat Domisili</label>
+                            <textarea id="alamat" cols="23" rows="3" placeholder="Alamat domisili Anda saat ini"></textarea>
+                        </div>
+                        <div class="inputany">
+                            <label for="jk">Jenis Kelamin</label>
+                            <input type="radio" id="jk" value="Laki-Laki" required>Pria
+                            <input type="radio" id="jk" value="Perempuan" required>Wanita
+                        </div>
+                        <div class="inputany">
+                            <label for="job">Pekerjaan     </label>
+                            <input type="checkbox" value="Pelajar" id="job">Pelajar
+                            <input type="checkbox" value="Karyawan" id="job">Karyawan
+                            <input type="checkbox" value="Pegawai" id="job">Pegawai
+                            <input type="checkbox" value="Usahawan" id="job">Usahawan
+                        </div>
+                        <div class="inputany">
+                            <label for="need">Keperluan Anda menggunakan website ini</label>
+                            <select id="need">
+                                <option value="Riset dan pembelajaran">Riset dan pembelajaran</option>
+                                <option value="Bisnis komersial">Bisnis komersial</option>
+                                <option value="Hobi dan kegemaran">Hobi dan kegemaran</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" onclick="saveprofile()">Save</button>
+        </form>
+    </div>
+</body>
+<script src="js/profile.js"></script>
+</html>

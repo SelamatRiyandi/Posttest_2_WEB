@@ -1,0 +1,163 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+html{
+    position: relative;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    width: 100%;
+    background-image: url("img/bgdark.jpg");
+    background-size: cover;
+}
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.logo img {
+    float: left;
+    width: 30px;
+    padding: 17px 7px 17px 0px;
+}
+.logo a {
+    font-size: 30px;
+    float: left;
+    font-family: sans-serif;
+    color: white;
+}
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-align: center;
+    padding:10px 20px 10px;
+    text-decoration: none;
+    font-family: sans-serif ;
+}
+
+.activated{
+    color: rgb(255, 254, 254);
+    background-color: rgb(107, 96, 41);
+    padding: 10px 20px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(117, 106, 41);
+    padding:10px 20px 10px;
+    border-radius: 50px;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+}
+
+.content a {
+    color: #fff;
+    padding: 50 50 50 50;
+}
+
+.konten1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.konten1 .subjudul {
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'calibri';
+    color: white;
+
+}
+
+.konten1 h2 {
+    font-family: 'calibri';
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.konten1 .konten {
+    color: white;
+}
+
+.konten1 img {
+    float: left;
+    width : 100px;
+    padding: 10px 20px 15px 0px;
+}
+
+footer {
+    line-height: 30px;
+    padding: 0px 0px 0px 100px;
+    width: 100%;
+    height: 300px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+}
+
+.logopage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logopage img {
+    width: 100%px;
+    height: 150px;
+    float: left;
+    padding: 10px 20px 15px 80px;
+}
+
+.logopage .subjudul {
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.logopage h2 {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+}
