@@ -21,7 +21,7 @@ Berikut merupakan tampilan halaman dashboard yang bisa diakses oleh user ketika 
 ![5 login succes](https://user-images.githubusercontent.com/120239011/227744946-8670f011-962b-4379-8cd3-8b3a73410eb2.png)
 ![6 dashboard](https://user-images.githubusercontent.com/120239011/227744928-5960d251-c578-49af-b17d-b933cfbb1498.png)
 
-## Profile Page-
+## Profile Page
 Berikut ini merupaka tampilan dari halaman profile page yang berisi form data dari user yang melakukan login pada website (dalam hal ini "Riyandi" selaku akun user yang melakukan logi pada halaman web ini).
 ![7 menampilkan variabel user dari local storage](https://user-images.githubusercontent.com/120239011/227745112-c1a20740-ce5f-467b-aaa1-27293ddf6e33.png)
 Pada halaman ini user diminta untuk memasukan data spesifik mereka untuk kelengkapan kebutuhan data pengguna yang nantinya data tersebut akan disimpan pada session storage.
